@@ -41,6 +41,7 @@ then
 php 1.php
 sleep 1
 clear
+./start
 fi
 
 if [ $act = 2 ] || [ $act = 2 ]
@@ -48,6 +49,7 @@ then
 php 2.php
 sleep 1
 clear
+./start
 fi
 
 if [ $act = 3 ] || [ $act = 3 ]
@@ -56,7 +58,16 @@ php 3.php
 echo -e $red'Sleeping For 30s and Running Again'
 sleep 30
 php 3.php
+sleep 30
+php 3.php
+sleep 30
+php 3.php
+sleep 30
+php 3.php
+sleep 5
+echo -e $red'Project Done.
 clear
+./start
 fi
 
 if  $act = 99 ] || [ $act = 99 ]
