@@ -17,39 +17,58 @@ echo -e $blue"  / __/ _ )  / _ \___ ___ _____/ /_ ";
 echo -e $blue" / _// _ |  / , _/ -_) _  / __/ __/ ";
 echo -e $blue"/_/ /____/ /_/|_|\__/\_,_/\__/\__/ ";
 echo -e $red"              Modified by anggaxyyx ";
-echo -e $white"\n";
+echo -e $green"\n";
 sleep 1
-echo "1 ) Setup BOT";
-echo "2 ) Run BOT";
+echo "0 ) Install Requirements";
+echo "1 ) Setup BOT Login";
+echo "2 ) Get Access Token";
+echo "3 ) Run BOT";
 echo "99) EXIT";
-read -p "[Set] >"  act;
+read -p "[Select] >"  act;
 
-if [ $act = 1 ] || [ $act = 1 ]
+if [ $act = 0 ]|| [ $act = 0 ]
 then
 apt update -y && apt upgrade -y
 pkg install -y php
+echo -e $red'Requirements Install Success'
+sleep 5
 clear
-sleep 1
+./start
+fi
+
+if [ $act = 1 ] || [ $act = 1 ]
+then
 php 1.php
+sleep 1
 clear
-php 2.php
-sleep 2
-clear
-php 3.php
 fi
 
 if [ $act = 2 ] || [ $act = 2 ]
 then
+php 2.php
+sleep 1
 clear
-php 3.php
 fi
 
-if [ $act = 99 ] || [ $act = 99 ]
+if [ $act = 3 ] || [ $act = 3 ]
 then
-echo -e $red'EXIT BOT DONE'
+php 3.php
+echo -e $red'Sleeping For 30s and Running Again'
+sleep 30
+php 3.php
+clear
+fi
+
+if  $act = 99 ] || [ $act = 99 ]
+then
+clear
+echo -e $red'Quit Tools'
 sleep 1
 exit
 fi
+
+
+
 
 
 
