@@ -57,15 +57,19 @@ then
 php 3.php
 echo -e $red'Sleeping For 30s and Running Again'
 sleep 30
+echo -e $red'Sleeping For 30s and Running Again'
 php 3.php
 sleep 30
+echo -e $red'Sleeping For 30s and Running Again'
 php 3.php
 sleep 30
+echo -e $red'Sleeping For 30s and Running Again'
 php 3.php
 sleep 30
+echo -e $red'Sleeping For 30s and Running Again'
 php 3.php
 sleep 5
-echo -e $red'Project Done.
+echo -e $red'Project Done.'
 clear
 ./start
 fi
